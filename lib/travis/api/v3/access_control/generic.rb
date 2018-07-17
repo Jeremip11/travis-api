@@ -54,6 +54,10 @@ module Travis::API::V3
       !!Travis.config.enterprise
     end
 
+    def enterprise_unauthenticated?
+      enterprise? && !full_access_or_logged_in?
+    end
+
     def visible_repositories(list, repository_id = nil)
       # naïve implementation, can be replaced with smart implementation in specific subclasses
       visible_objects(list, repository_id, Models::Repository)
