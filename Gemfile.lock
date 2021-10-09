@@ -137,8 +137,8 @@ GEM
       descendants_tracker (~> 0.0.1)
     composite_primary_keys (8.1.6)
       activerecord (~> 4.2.0)
-    concurrent-ruby (1.0.5)
-    connection_pool (2.2.1)
+    concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     dalli (2.7.6)
@@ -303,7 +303,7 @@ GEM
       multi_json (~> 1.0)
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
-    rack (1.6.9)
+    rack (1.6.13)
     rack-attack (5.0.0.beta1)
       rack
     rack-contrib (1.4.0)
@@ -352,11 +352,11 @@ GEM
     safe_yaml (1.0.4)
     sentry-raven (2.5.3)
       faraday (>= 0.7.6, < 1.0)
-    sidekiq (4.2.6)
-      concurrent-ruby (~> 1.0)
-      connection_pool (~> 2.2, >= 2.2.0)
+    sidekiq (5.2.8)
+      connection_pool (~> 2.2, >= 2.2.2)
+      rack (< 2.1.0)
       rack-protection (>= 1.5.0)
-      redis (~> 3.2, >= 3.2.1)
+      redis (>= 3.3.5, < 5)
     signet (0.8.1)
       addressable (~> 2.3)
       faraday (~> 0.9)
@@ -470,7 +470,7 @@ DEPENDENCIES
   rspec-its
   s3!
   sentry-raven
-  sidekiq
+  sidekiq (>= 5.2.0)
   simple_states (= 1.0.2)
   simplecov
   sinatra
@@ -495,4 +495,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
