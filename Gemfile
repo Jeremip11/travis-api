@@ -38,7 +38,7 @@ gem 'simplecov'
 gem 'stackprof'
 gem 'netaddr'
 gem 'nakayoshi_fork'
-gem 'sidekiq'
+gem 'sidekiq', '>= 5.2.0'
 gem 'redis-namespace'
 gem 'marginalia', git: 'https://github.com/travis-ci/marginalia'
 
