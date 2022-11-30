@@ -15,8 +15,8 @@ gem 'travis-rollout',  git: 'https://github.com/travis-ci/travis-rollout', branc
 
 gem 'travis-yaml',     git: 'https://github.com/travis-ci/travis-yaml'
 gem 'mustermann'
-gem 'sinatra'
-gem 'sinatra-contrib', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra', '>= 2.2.3'
+gem 'sinatra-contrib', '>= 2.2.3', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states',   '1.0.2'
 
