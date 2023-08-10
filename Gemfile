@@ -53,7 +53,7 @@ gem 'rake', '~> 0.9.2'
 
 gem 'libhoney'
 gem 'opencensus'
-gem 'opencensus-stackdriver'
+gem 'opencensus-stackdriver', '>= 0.1.2'
 
 gem 'faraday'
 gem 'faraday_middleware'
