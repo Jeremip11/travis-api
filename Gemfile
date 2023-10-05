@@ -16,7 +16,7 @@ gem 'travis-rollout',  git: 'https://github.com/travis-ci/travis-rollout', branc
 gem 'travis-yaml',     git: 'https://github.com/travis-ci/travis-yaml'
 gem 'mustermann'
 gem 'sinatra'
-gem 'sinatra-contrib', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra-contrib', '>= 2.0.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states',   '1.0.2'
 
@@ -70,7 +70,7 @@ gem 'tool'
 gem 'google-api-client', '~> 0.9.4'
 gem 'fog-aws',           '~> 0.12.0'
 gem 'fog-google',        '~> 0.4.2'
-gem 'activerecord',      '~> 4.2'
+gem 'activerecord', '~> 4.2', '>= 4.2.11'
 gem 'rollout',           '~> 1.1.0'
 gem 'coder',             '~> 0.4.0'
 gem 'virtus',            '~> 1.0.0'
