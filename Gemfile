@@ -16,7 +16,7 @@ gem 'travis-rollout',  git: 'https://github.com/travis-ci/travis-rollout', branc
 gem 'travis-yaml',     git: 'https://github.com/travis-ci/travis-yaml'
 gem 'mustermann'
 gem 'sinatra'
-gem 'sinatra-contrib', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra-contrib', '>= 2.0.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states',   '1.0.2'
 
@@ -38,7 +38,7 @@ gem 'simplecov'
 gem 'stackprof'
 gem 'netaddr'
 gem 'nakayoshi_fork'
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.1.0'
 gem 'redis-namespace'
 gem 'marginalia', git: 'https://github.com/travis-ci/marginalia'
 
