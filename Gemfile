@@ -68,8 +68,8 @@ gem 'memcachier'
 gem 'useragent'
 gem 'tool'
 gem 'google-api-client', '~> 0.9.4'
-gem 'fog-aws',           '~> 0.12.0'
-gem 'fog-google',        '~> 0.4.2'
+gem 'fog-aws', '~> 0.13.0'
+gem 'fog-google', '~> 0.5.0'
 gem 'activerecord',      '~> 4.2'
 gem 'rollout',           '~> 1.1.0'
 gem 'coder',             '~> 0.4.0'
@@ -91,7 +91,7 @@ group :test do
 end
 
 group :development do
-  gem 'foreman'
+  gem 'foreman', '>= 0.86.0'
   gem 'rerun'
   gem 'rb-fsevent', '~> 0.9.1'
 end
